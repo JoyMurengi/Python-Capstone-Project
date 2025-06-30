@@ -1,62 +1,62 @@
-# Python-Capstone-Project
 # MyCrochet Haven
 
 ## Project Description  
-MyCrochet Haven is a desktop application that allows customers to browse and shop for handmade crochet products. Designed with a clean and intuitive interface, the app provides a virtual storefront experience where buyers can view product details, filter items by category, and manage a shopping cart. It is built using Python, Tkinter for the GUI, and structured with Object-Oriented Programming (OOP) principles.
+MyCrochet Haven is a desktop-based shopping application that allows users to browse and simulate purchasing handmade crochet products. Built using Python and Tkinter, it offers a user-friendly interface where buyers can view product details, filter items by category, and manage a simple shopping cart. The application is structured using Object-Oriented Programming (OOP) principles to separate data logic, user interface, and cart management.
 
-## Purpose / Problem Solved  
-Small crochet businesses often lack structured platforms to display their products, making it hard for buyers to explore available items. MyCrochet Haven solves this by offering a mock e-commerce experience tailored to handcrafted crochet products. It helps customers engage with products more easily and provides a foundation for future e-commerce expansion.
+## Problem Solved  
+Many small crochet businesses struggle to present their products digitally. MyCrochet Haven offers a virtual storefront simulation that allows customers to explore and select items in an organized and intuitive way — providing a stepping stone toward real e-commerce capabilities.
 
-## Planned Features
+## Core Features Implemented
 
 ### 1. Product Browsing
-- View available crochet products with name, category, price, and stock
-- Filter products by category (e.g., wearables, home décor, accessories)
-- View product descriptions and stock availability
+- Displays all available crochet products with name, category, price, and stock.
+- Allows filtering by product category (e.g., Wearables, Accessories, Home Décor).
+- Visually indicates if an item is out of stock.
 
 ### 2. Shopping Cart (Simulated)
-- Add products to a shopping cart
-- View total price of items in cart
-- Remove items from cart
-- Confirm a mock checkout and reduce stock accordingly
+- Add selected products to a cart with specified quantity.
+- View cart contents and the total price.
+- Remove items from the cart.
+- Checkout simulates a sale by reducing product stock and recording the purchase.
 
 ### 3. Data Handling
-- Load product data from `.csv` files
-- Update stock levels after checkout
-- Save session data (optional stretch goal)
+- Loads product data from `products.csv`.
+- After checkout, updates stock and appends the transaction to `sales.csv`.
 
 ### 4. User Interface (GUI)
-- Graphical interface built using Tkinter
-- Separate views for product listing, product details, and cart summary
-- Functional buttons for actions like add to cart, remove, and checkout
+- Built using Tkinter with a clean and welcoming layout.
+- Separate views for browsing products and managing the shopping cart.
+- Category dropdown and action buttons are clearly placed for ease of navigation.
 
-### 5. Program Structure (OOP)
-- Use of classes such as `Product`, `CartItem`, `Cart`, and `AppManager`
-- Object-Oriented Programming principles applied to separate concerns and manage data
-- Methods to encapsulate cart management, product loading, and user interactions
-
-### 6. Additional Functionalities
-- Clear/reset cart option
-- Exit application functionality
-- Error handling for invalid selections or empty stock
+### 5. Object-Oriented Design
+- Core classes: `Product`, `CartItem`, `Cart`.
+- Applies encapsulation, modularity, and abstraction.
 
 ## Technologies / Concepts Used
-- Python core: functions, classes, loops, dictionaries
-- Tkinter: for GUI development
-- csv module: for storing and loading product information
-- datetime module (optional): to track session activity or order timestamps
+- Python (functions, classes, conditionals, lists, etc.)
+- Tkinter (GUI)
+- `csv` module (data persistence)
+- Object-Oriented Programming (OOP)
 
-## Success Criteria
-- Products are successfully loaded from a data file and displayed in the interface
-- Buyers can select, add, and remove products from a shopping cart
-- Cart total updates correctly and reflects current selections
-- Mock checkout reduces inventory and displays confirmation
-- Application runs smoothly with a functional, user-friendly interface
-- Code is modular and follows OOP practices
+## Success Criteria (Met)
+- Products load correctly from file and are displayed in the GUI.
+- Users can select products and manage their cart.
+- Category filter functions correctly.
+- Cart totals are accurate.
+- Checkout updates product stock and logs sales.
+- Code is clean, modular, and follows OOP structure.
 
-## Stretch Goals
-- Visualize product popularity using charts
-- Add product ratings or user comments
-- Include simulated customer login or profile system
-- Export printable order summary or cart receipt
-- 
+## Stretch Goals (Not Yet Implemented)
+- Product popularity visualization using charts
+- Crochet care tips section or "About" window
+- User login/profile simulation
+- Printable cart receipt or order summary
+
+## Sample File Formats
+
+**products.csv**
+```csv
+name,category,price,stock,description
+Crochet Hat,Wearables,500,10,Warm and cozy handmade hat
+Coaster Set,Home Décor,300,15,Colorful coasters for cups
+Scrunchie,Accessories,150,25,Soft and stretchy hair scrunchie
